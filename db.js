@@ -8,8 +8,9 @@ module.exports = function() {
       id:i, 
       name:faker.name.firstName(),
       lastname:faker.name.lastName(),
-      address: faker.address.zipCode()+" "+faker.address.state()+"   "+faker.address.country()
-      
+      address: faker.address.zipCode()+" "+faker.address.state()+"   "+faker.address.country(),
+      Username: faker.internet.userName(),
+      Password: faker.internet.password()
     })
   }
   return data
